@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\Mods\PW\BModP.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA9A6CA2-12BB-47BF-928F-639EDD55970E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BModP</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Dependencies\Il2CppAssemblyGenerator\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\net6\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\Mods\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Dependencies\Il2CppAssemblyGenerator\UnityDependencies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Dependencies\Il2CppAssemblyGenerator\UnityDependencies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Dependencies\Il2CppAssemblyGenerator\UnityDependencies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Dependencies\Il2CppAssemblyGenerator\UnityDependencies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Dependencies\Il2CppAssemblyGenerator\UnityDependencies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Pixel Worlds\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pathfinding.cs" />
+    <Compile Include="PathfindingResult.cs" />
+    <Compile Include="PNode.cs" />
+    <Compile Include="TileProvider.cs" />
+    <Compile Include="BmodEvent.cs" />
+    <Compile Include="BMod\ChatCommand.cs" />
+    <Compile Include="BMod\HotkeyEvent.cs" />
+    <Compile Include="BMod\Main.cs" />
+    <Compile Include="BMod\Globals.cs" />
+    <Compile Include="BMod\BsonHelper.cs" />
+    <Compile Include="BMod\Teleport.cs" />
+    <Compile Include="BMod\Utils.cs" />
+    <Compile Include="BMod\WorldCheats.cs" />
+    <Compile Include="BMod\PlayerCheats.cs" />
+    <Compile Include="BMod\Patches\BSON.cs" />
+    <Compile Include="BMod\Patches\Patches.cs" />
+    <Compile Include="BMod\Patches\LoadingScreen_SetText.cs" />
+    <Compile Include="BMod\Patches\NC_Update.cs" />
+    <Compile Include="BMod\Patches\OM_SendListOfUsedPlayerNames.cs" />
+    <Compile Include="BMod\Patches\P_DeathByColliderInCollider.cs" />
+    <Compile Include="BMod\Patches\CharacterController2D_move.cs" />
+    <Compile Include="BMod\Patches\PD_HasUnlockedRecipe.cs" />
+    <Compile Include="BMod\Patches\ProfanityFuck.cs" />
+    <Compile Include="BMod\Patches\BoundsFix.cs" />
+    <Compile Include="BMod\Patches\AdminToolsUI_ShowMenu.cs" />
+    <Compile Include="BMod\Patches\Spirit_Activate.cs" />
+    <Compile Include="BMod\Patches\Spirit_Deactivate.cs" />
+    <Compile Include="BMod\Patches\FriendsUI_Activate.cs" />
+    <Compile Include="BMod\Patches\GlobalMSG_Block.cs" />
+    <Compile Include="BMod\Patches\HamMSG_Block.cs" />
+    <Compile Include="BMod\Patches\SL_LeaveWorld.cs" />
+    <Compile Include="BMod\Patches\WC_AfkKick.cs" />
+    <Compile Include="BMod\Patches\WC_TrapACrasher.cs" />
+    <Compile Include="BMod\Patches\WC_MannequinALagger.cs" />
+    <Compile Include="BMod\Patches\CD_Recall.cs" />
+    <Compile Include="BMod\Patches\MINEBOT_SWD.cs" />
+    <Compile Include="BMod\Patches\MINEBOT_NEWCOLLECTABLE.cs" />
+    <Compile Include="BMod\Patches\WC_RemoveCollectable.cs" />
+    <Compile Include="BMod\Patches\NC_DoHardReconnect.cs" />
+    <Compile Include="BMod\Patches\PD_AddXP.cs" />
+    <Compile Include="BMod\Patches\SummonTimer.cs" />
+    <Compile Include="BMod\KrakPath\SkiddedMinePath.cs" />
+    <Compile Include="BMod\pathfinding\ShiukiAI.cs" />
+    <Compile Include="BMod\ESP\Render.cs" />
+    <Compile Include="BMod\Discord\DiscordManager.cs" />
+    <Compile Include="BMod\Auto\ACTk.cs" />
+    <Compile Include="BMod\Auto\AutoASP.cs" />
+    <Compile Include="BMod\Auto\FarmBot.cs" />
+    <Compile Include="BMod\Auto\FishBot.cs" />
+    <Compile Include="BMod\Auto\MineBot.cs" />
+    <Compile Include="DiscordRPC\Configuration.cs" />
+    <Compile Include="DiscordRPC\DiscordRpcClient.cs" />
+    <Compile Include="DiscordRPC\EventType.cs" />
+    <Compile Include="DiscordRPC\BaseRichPresence.cs" />
+    <Compile Include="DiscordRPC\Secrets.cs" />
+    <Compile Include="DiscordRPC\Assets.cs" />
+    <Compile Include="DiscordRPC\Timestamps.cs" />
+    <Compile Include="DiscordRPC\Party.cs" />
+    <Compile Include="DiscordRPC\Button.cs" />
+    <Compile Include="DiscordRPC\RichPresence.cs" />
+    <Compile Include="DiscordRPC\RichPresenceResponse.cs" />
+    <Compile Include="DiscordRPC\User.cs" />
+    <Compile Include="DiscordRPC\RPC\RpcConnection.cs" />
+    <Compile Include="DiscordRPC\RPC\RpcState.cs" />
+    <Compile Include="DiscordRPC\RPC\Payload\ClosePayload.cs" />
+    <Compile Include="DiscordRPC\RPC\Payload\Command.cs" />
+    <Compile Include="DiscordRPC\RPC\Payload\IPayload.cs" />
+    <Compile Include="DiscordRPC\RPC\Payload\ArgumentPayload.cs" />
+    <Compile Include="DiscordRPC\RPC\Payload\EventPayload.cs" />
+    <Compile Include="DiscordRPC\RPC\Payload\ServerEvent.cs" />
+    <Compile Include="DiscordRPC\RPC\Commands\CloseCommand.cs" />
+    <Compile Include="DiscordRPC\RPC\Commands\ICommand.cs" />
+    <Compile Include="DiscordRPC\RPC\Commands\PresenceCommand.cs" />
+    <Compile Include="DiscordRPC\RPC\Commands\RespondCommand.cs" />
+    <Compile Include="DiscordRPC\RPC\Commands\SubscribeCommand.cs" />
+    <Compile Include="DiscordRPC\Message\CloseMessage.cs" />
+    <Compile Include="DiscordRPC\Message\ConnectionEstablishedMessage.cs" />
+    <Compile Include="DiscordRPC\Message\ConnectionFailedMessage.cs" />
+    <Compile Include="DiscordRPC\Message\ErrorMessage.cs" />
+    <Compile Include="DiscordRPC\Message\ErrorCode.cs" />
+    <Compile Include="DiscordRPC\Message\IMessage.cs" />
+    <Compile Include="DiscordRPC\Message\JoinMessage.cs" />
+    <Compile Include="DiscordRPC\Message\JoinRequestMessage.cs" />
+    <Compile Include="DiscordRPC\Message\MessageType.cs" />
+    <Compile Include="DiscordRPC\Message\PresenceMessage.cs" />
+    <Compile Include="DiscordRPC\Message\ReadyMessage.cs" />
+    <Compile Include="DiscordRPC\Message\SpectateMessage.cs" />
+    <Compile Include="DiscordRPC\Message\SubscribeMessage.cs" />
+    <Compile Include="DiscordRPC\Message\UnsubscribeMessage.cs" />
+    <Compile Include="DiscordRPC\Logging\ConsoleLogger.cs" />
+    <Compile Include="DiscordRPC\Logging\FileLogger.cs" />
+    <Compile Include="DiscordRPC\Logging\ILogger.cs" />
+    <Compile Include="DiscordRPC\Logging\LogLevel.cs" />
+    <Compile Include="DiscordRPC\Logging\NullLogger.cs" />
+    <Compile Include="DiscordRPC\IO\Handshake.cs" />
+    <Compile Include="DiscordRPC\IO\INamedPipeClient.cs" />
+    <Compile Include="DiscordRPC\IO\ManagedNamedPipeClient.cs" />
+    <Compile Include="DiscordRPC\IO\Opcode.cs" />
+    <Compile Include="DiscordRPC\IO\PipeFrame.cs" />
+    <Compile Include="DiscordRPC\Helper\BackoffDelay.cs" />
+    <Compile Include="DiscordRPC\Helper\StringTools.cs" />
+    <Compile Include="DiscordRPC\Exceptions\BadPresenceException.cs" />
+    <Compile Include="DiscordRPC\Exceptions\InvalidConfigurationException.cs" />
+    <Compile Include="DiscordRPC\Exceptions\InvalidPipeException.cs" />
+    <Compile Include="DiscordRPC\Exceptions\StringOutOfRangeException.cs" />
+    <Compile Include="DiscordRPC\Exceptions\UninitializedException.cs" />
+    <Compile Include="DiscordRPC\Events\OnReadyEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnCloseEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnErrorEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnPresenceUpdateEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnSubscribeEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnUnsubscribeEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnJoinEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnSpectateEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnJoinRequestedEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnConnectionEstablishedEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnConnectionFailedEvent.cs" />
+    <Compile Include="DiscordRPC\Events\OnRpcMessageEvent.cs" />
+    <Compile Include="DiscordRPC\Converters\EnumSnakeCaseConverter.cs" />
+    <Compile Include="DiscordRPC\Converters\EnumValueAttribute.cs" />
+    <Compile Include="Priority_Queue\FastPriorityQueue`1.cs" />
+    <Compile Include="Priority_Queue\FastPriorityQueueNode.cs" />
+    <Compile Include="Priority_Queue\IFixedSizePriorityQueue`2.cs" />
+    <Compile Include="Priority_Queue\IPriorityQueue`2.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
